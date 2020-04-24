@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bot": "nodemon index.js"
+    "bot": "nodemon index.js",
+    "start": "node index.js"
   },
   "author": "beverly hernandez",
   "license": "ISC",
