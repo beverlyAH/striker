@@ -3,7 +3,7 @@ module.exports = (n) => {
     return 'invalid'
   }
   if(n === undefined || typeof n !== 'number' || Number.isNaN(parseInt(n)) || n === '1') {
-    return Math.floor(Math.random() * 6 + 1)
+    return '**' + Math.floor(Math.random() * 6 + 1) + '**'
   } else {
     var numbers = ''
     var arr = []

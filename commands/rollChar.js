@@ -1,4 +1,4 @@
-const rollD6 = require('./roller.js')
+const rollD6 = require('../utils/roller.js')
 const commonSpecies = require('./lib/commonSpecies')
 const rareSpecies = require('./lib/rareSpecies')
 const classes = require('./lib/classes')

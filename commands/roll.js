@@ -1,7 +1,7 @@
-const rollD6 = require('./roller.js')
+const rollD6 = require('../utils/roller.js')
 
 module.exports = {
-  name: '/r',
+  name: '/s',
   description: 'dice roller',
   execute(msg, args) {
     console.log(args)
@@ -14,20 +14,37 @@ module.exports = {
       }
       var max = parseInt(roll.slice(roll.length - 3))
       if(max === 6) {
-        msg.channel.send(`<@${msg.author.id}>: \`${number}D6\` => ${roll}  \`SUCCESS!\``)
+        if(msg.author.id === '656284156560408580') {
+          msg.channel.send(`<@${msg.author.id}>: \`${number}D6\` => ${roll}  \`Congratulations on a magnificent success, sir.\``)
+        } else {
+          msg.channel.send(`<@${msg.author.id}>: \`${number}D6\` => ${roll}  \`SUCCESS!\``)
+        }
       } else if (max === 5) {
         msg.channel.send(`<@${msg.author.id}>: \`${number}D6\` => ${roll}  \`partial success\``)
       } else {
-        msg.channel.send(`<@${msg.author.id}>: \`${number}D6\` => ${roll}  \`failure...\``)
+        if(msg.author.id === '656284156560408580') {
+          msg.channel.send(`<@${msg.author.id}>: \`${number}D6\` => ${roll}  \`My condolences, sir.\``)
+        } else {
+          msg.channel.send(`<@${msg.author.id}>: \`${number}D6\` => ${roll}  \`failure...\``)
+        }
       }
     } else {
-      var roll = rollD6()
+      var rolled = rollD6()
+      var roll = parseInt(rolled.slice(2, rolled.length - 2))
       if(roll === 6) {
-        msg.channel.send(`<@${msg.author.id}>: \`1D6\` => **${roll}**  \`SUCCESS!\``)
+        if(msg.author.id === '656284156560408580') {
+          msg.channel.send(`<@${msg.author.id}>: \`1D6\` => ${rolled}  \`Congratulations on a magnificent success, sir.\``)
+        } else {
+          msg.channel.send(`<@${msg.author.id}>: \`1D6\` => ${rolled}  \`SUCCESS!\``)
+        }
       } else if (roll === 5) {
-        msg.channel.send(`<@${msg.author.id}>: \`1D6\` => **${roll}** \`partial success\``)
+        msg.channel.send(`<@${msg.author.id}>: \`1D6\` => **${rolled}** \`partial success\``)
       } else {
-        msg.channel.send(`<@${msg.author.id}>: \`1D6\` => **${roll}** \`failure...\``)
+        if(msg.author.id === '656284156560408580') {
+          msg.channel.send(`<@${msg.author.id}>: \`1D6\` => ${rolled}  \`My condolences, sir.\``)
+        } else {
+          msg.channel.send(`<@${msg.author.id}>: \`1D6\` => ${rolled}  \`failure...\``)
+        }
       }
     }
   }

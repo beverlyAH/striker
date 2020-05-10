@@ -26,6 +26,6 @@ bot.on('message', msg => {
     console.info(`Called command: ${command}`);
   } catch (error) {
     console.error(error)
-    msg.reply('there was an error trying to execute that command!');
+    msg.reply(`I'm afraid I don't know what you mean.`);
   }
 });

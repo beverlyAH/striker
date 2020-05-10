@@ -3,7 +3,7 @@ module.exports = {
   description: 'space point information',
   execute(msg, args) {
     msg.author.send(
-    `#### Space Points ####`
+    `> **Space Points!**`
     + '\n' +
     `> Space adventurers have a knack for turning the odds in their favor and succeeding. This ability is represented by Space Points! They are a precious and limited resource which can used at any time during your adventures to turn a situation to your advantage.`
     + '\n' +
@@ -28,9 +28,9 @@ module.exports = {
     + '\n' +
     `> **Changing the story**`
     + '\n' +
-    `Space Points can also be used to make small changes to the story. For example, if a merchant ran out of an item you needed or you missed the last transport off-planet, you could spend a Space Point to change that detail. Maybe the shopkeeper finds one more of the item in the back or in a display case or maybe the transport stops and re-opens its doors to allow you to board. Or maybe you left a key piece of equipment behind on your ship. You could spend a Space Point to say that you actually remembered to bring the item at the last minute.
-    Space Points can allow you to make any change to the story as long as the Spacemaster agrees. For larger changes, the Spacemaster may require you to spend more than one Space Point or may require multiple players to contribute Space Points.
-    `)
+    `* Space Points can also be used to make small changes to the story. For example, if a merchant ran out of an item you needed or you missed the last transport off-planet, you could spend a Space Point to change that detail. Maybe the shopkeeper finds one more of the item in the back or in a display case or maybe the transport stops and re-opens its doors to allow you to board. Or maybe you left a key piece of equipment behind on your ship. You could spend a Space Point to say that you actually remembered to bring the item at the last minute.`
+    + '\n' + 
+    `* Space Points can allow you to make any change to the story as long as the Spacemaster agrees. For larger changes, the Spacemaster may require you to spend more than one Space Point or may require multiple players to contribute Space Points.`)
   }
 };
 
