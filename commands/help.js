@@ -6,7 +6,7 @@ module.exports = {
       msg.channel.send({
         embed: {
         title: 'Available Commands',
-        color: 3121919,
+        color: 3447260,
         fields: [
           {
             name: '/ability [class]',
