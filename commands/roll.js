@@ -1,3 +1,6 @@
+require('dotenv').config();
+const MIRSSA = process.env.MIRSSA
+
 const rollD6 = require('../utils/roller.js')
 const mirssaFinish = (msg, roll) => {
   let message = `<@${msg.author.id}>: ${roll}`;
@@ -33,8 +36,8 @@ module.exports = {
       .catch(err => { console.error(err) })
       return 200
     }
-    //  Mirssa === '656284156560408580'
-    if(msg.author.id === '656284156560408580') {
+
+    if(msg.author.id === MIRSSA) {
       let message = mirssaFinish(msg, roll)
       msg.channel.send(message)
       .catch(err => { console.error(err) })
