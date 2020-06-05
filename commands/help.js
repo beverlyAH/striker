@@ -9,6 +9,10 @@ module.exports = {
         color: 3447260,
         fields: [
           {
+            name: '/inventory',
+            value: 'Inventory system. Use `/inventory help` for more information.'
+          },
+          {
             name: '/ability [class]',
             value: 'List available abilities for a given class.'
           },
