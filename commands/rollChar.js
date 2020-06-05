@@ -1,7 +1,7 @@
 const rollD6 = require('../utils/roller.js')
 const commonSpecies = require('./lib/commonSpecies')
 const rareSpecies = require('./lib/rareSpecies')
-const classes = require('./lib/classes')
+const classes = require('./lib/rollClass')
 
 const characterSpecies = (first, second) => {
   if(first >= 1 && first <= 4) {
