@@ -4,5 +4,6 @@ module.exports = {
   addItem: require('./addItems'),
   removeItem: require('./removeItems'),
   updateCredits: require('./updateCredits'),
-  updatePoints: require('./updatePoints')
+  updatePoints: require('./updatePoints'),
+  purgeEntry: require('./purge.js')
 }

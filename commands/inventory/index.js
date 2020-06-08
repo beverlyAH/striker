@@ -5,6 +5,7 @@ const addItems = require('./add')
 const removeItems = require('./remove')
 const helpMessage = require('./help')
 const updatePoints = require('./points')
+const purgeEntry = require('./purgeEntry.js')
 
 module.exports = {
   name: '/inventory',
@@ -23,6 +24,8 @@ module.exports = {
         return updatePoints(msg, args.slice(1));
       case 'help':
         return helpMessage(msg, args)
+      case 'purge':
+        return purgeEntry(msg, args.slice(1));
       default:
         return getInventory(msg, args);
     }

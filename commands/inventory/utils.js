@@ -19,7 +19,8 @@ module.exports = {
     }
     inventory = inventory.slice(0, inventory.length - 2)
   
-    payload.description = `<@${name}>`
+    payload.description = `<@${name}>`;
+    payload.color = 3447260;
     payload.fields = [
       {
         name: "Credits",
