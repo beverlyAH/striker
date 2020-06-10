@@ -11,7 +11,7 @@ module.exports = (msg, args) => {
     }
     return purgeEntry(user, (err, response) => {
       if(err) {
-        return msg.channel.send('There a problem deleting that entry.')
+        return msg.channel.send('There was a problem deleting that entry.')
         .catch(err => {
           console.error(err)
         })
