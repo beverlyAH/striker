@@ -8,7 +8,8 @@
     "start": "pm2 start index.js",
     "stop": "pm2 stop index.js",
     "list": "pm2 list",
-    "log": "pm2 logs"
+    "log": "pm2 logs",
+    "update-env": "pm2 restart --update-env all"
   },
   "author": "beverly hernandez",
   "license": "ISC",
