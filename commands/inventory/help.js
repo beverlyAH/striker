@@ -23,6 +23,11 @@ module.exports = (msg) => {
           name: '`/inventory credits [number]`',
           value: 'Adds or removes credits to your inventory.\n' +
           'Example: `/inventory credits 500` OR `/inventory credits -100`'
+        },
+        {
+          name: '`/inventory points [number]`',
+          value: 'Adds or removes Space Points.\n' +
+          'Example: `/inventory points 5` OR `/inventory credits -3`'
         }
       ],
       timestamp: new Date,
